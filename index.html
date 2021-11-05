@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form Project</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+    <header class="header"><h1 id="title" class="text-center">Cadastro RPG da Galera</h1>
+      <p id="description" class="description text-center"> Aqui você se cadastra para participar das nossas mesas!</p></header>
+    <br>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Nome Completo"
+          required
+        /><br>
+        <br>
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Seu melhor e-mail"
+          required
+        /><br><br>
+              <label id="nick-label" for="nick">Apelido</label>
+        <input
+          type="text"
+          name="nick"
+          id="nick"
+          class="form-control"
+          placeholder="Como gostaria de ser chamado?"
+          required
+        /><br><br>
+              <label id="number-label" for="age">Idade</label>
+        <input
+          id="number"
+          type="number"
+          min="12"
+          max="99"     
+          name="age"
+          id="age"
+          class="form-control"
+          placeholder="Sua idade"
+          required
+               />
+        <br><br></div>
+       <div class="form-group">
+        <p>Que opção define você hoje?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecione uma</option>
+          <option value="jogador inic">Jogador Iniciante</option>
+          <option value="jogador experiente">Jogador Experiente</option>
+          <option value="jogador e narrador">Jogador e Narrador</option>
+          <option value="narrador">Narrador</option>
+          <option value="nunca jogou">Nunca Joguei</option>
+        </select>
+      </div>
+      
+      
+      <div class="form-group">
+        <p>Qual a sua disponibilidade para jogar?</p>
+        <label>
+          <input
+            name="disponibilidade"
+            value="online"
+            type="radio"
+            class="input-radio"
+            checked
+          />Apenas Online</label
+        >
+        <label>
+          <input
+            name="disponibilidade"
+            value="presencial e online"
+            type="radio"
+            class="input-radio"
+          />Presencial e Online</label
+        >
+  
+        <label
+          ><input
+            name="disponibilidade"
+            value="presencial"
+            type="radio"
+            class="input-radio"
+          />Apenas Presencial</label>
+      </div>
+       <div class="form-group">
+        <p>
+          Quais sistemas você conhece?
+          <span class="clue">(Marque quantos quiser)</span>
+        </p>
+  
+        <label
+          ><input
+            name="sistemas"
+            value="storyteller"
+            type="checkbox"
+            class="input-checkbox"
+          />Storyteller (Vampiro/Lobisomem/Mago)</label
+        >
+        <label>
+          <input
+            name="sistemas"
+            value="d&d"
+            type="checkbox"
+            class="input-checkbox"
+          />D&D</label
+        >
+        <label
+          ><input
+            name="sistemas"
+            value="Gurps"
+            type="checkbox"
+            class="input-checkbox"
+          />Gurps</label
+        >
+        <label
+          ><input
+            name="sistemas"
+            value="3D&T"
+            type="checkbox"
+            class="input-checkbox"
+          />3D&T</label
+        >
+        <label
+          ><input
+            name="sistemas"
+            value="coc"
+            type="checkbox"
+            class="input-checkbox"
+          />Call of Cthulhu</label
+        >
+        <label
+          ><input
+            name="sistemas"
+            value="trevas-daemon"
+            type="checkbox"
+            class="input-checkbox"
+          />Trevas/Daemon</label
+        >
+        <label
+          ><input
+            name="sistemas"
+            value="outros"
+            type="checkbox"
+            class="input-checkbox"
+          />Outros</label>
+  </div>
+      <div class="form-group">
+        <p>Fale um pouco mais sobre a sua experiência e expectativas com jogos de RPG:</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Escreva aqui mais sobre você e sua relação com jogos de RPG =)"
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+    </div>
+    
+</body>
+</html>
